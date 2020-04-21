@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Inscription</title>
+		<link rel="stylesheet" href="header.css" />
+		<link rel="stylesheet" href="inscription.css">
+		<link rel="stylesheet" href="assassin/stylesheet.css" />
+		<link rel="stylesheet" href="roboto_thin/stylesheet.css" />
+		<link rel="icon" sizes="144x144" href="design/icon.png" />
+	</head>
+	<body>
+		<header>
+			<img src="design/ac2logo.png" alt="Logo d'Assassin's Creed II" />
+			<h1>Assassin's Creed II</h1>
+			<nav>
+				<ul>
+					<!-- N'oubliez pas de déplacer l'id="en_cour" à la page en cours. Ex : pour la page gestion_compte, enlever l'id de index, et le remettre à gestion_compte. -->
+					<li><a href="index.html" class="menu">Accueil</a></li>
+					<li id="gestion_compte"><a href="gestion_compte.html" class="menu">Gestion du compte</a></li>
+					<li id="administration"><a href="administration.html" class="menu">Administration</a></li>
+					<li id="a_propos"><a href="a_propos.html" class="menu">A propos</a></li>
+					<li><a href="inscription.html" class="inscr_conn" id="en_cour">Inscription</a></li>
+					<li><a href="connexion.html" class="inscr_conn">Connexion</a></li>
+				</ul>
+			</nav>
+		</header>
+      <section>
+         <h2>Inscription</h2>
+         <form action="cible.php" method="post">
+				<fieldset>
+					<legend>Informations de connexion</legend>
+	            <label for="pseudo">Pseudo</label>
+	            <input type ="text" id="pseudo" name="pseudo" required />
+	            <label for="mdp">Mot de passe</label>
+	            <input type="password" id="mdp" name="mdp" />
+	            <label for="verif_mdp">Vérification du mot de passe</label>
+	            <input type="password" id="verif_mdp" name="verif_mdp" />
+	            <label for="mail">Adresse mail</label>
+	            <input type="email" id="mail" name="mail" />
+					<label for="verif_mail">Vérification de l'adresse mail</label>
+	            <input type="email" id="verif_mail" name="verif_mail" />
+				</fieldset>
+				<fieldset>
+					<legend>Informations personnelles</legend>
+					<label for="nom">Nom</label>
+	            <input type="text" id="nom" name="nom" />
+	            <label for="prenom">Prénom</label>
+	            <input type="text" id="prenom" name="prenom" />
+					<p>
+						<input type="radio" value="homme" id="homme" name="sexe" />
+						<label for="homme"><span></span>Homme</label>
+					</p>
+					<p id="r_femme">
+						<input type="radio" value="femme" id="femme" name="sexe" />
+						<label for="femme"><span></span>Femme</label>
+					</p>
+					<p id="r_autre">
+						<input type="radio" value="autres" id="autre" name="sexe" />
+						<label for="autre"><span></span>Autre</label>
+					</p>
+					<label for="adresse">Adresse</label>
+					<input type="text" id="adresse" name="adresse" />
+					<label for="cp">Code postale</label>
+					<input type="text" id="cp" name="cp" />
+					<label for="ville">Ville</label>
+					<input type="text" id="ville" name="ville" />
+					<label for="tel">Numéro de telephone</label>
+					<input type="tel" id="tel" name="tel" />
+					<label for="bio">Votre biographie</label>
+					<textarea name="bio" id="bio" rows="8" cols="24" maxlength="300"></textarea>
+				</fieldset>
+				<label for="image" id="envoyer">Envoyer :</label>
+				<input type="image" id="image" name="image" src="design/lame.png" alt="Lame d'assassin d'Assassin's Creed" />
+         </form>
+      </section>
+	</body>
+</html>

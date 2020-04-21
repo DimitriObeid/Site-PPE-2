@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'assassin';
+    src: url('Assassin.eot');
+    src: url('Assassin.eot?#iefix') format('embedded-opentype'),
+         url('Assassin.woff') format('woff'),
+         url('Assassin.ttf') format('truetype'),
+         url('Assassin.svg#dobkinplain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

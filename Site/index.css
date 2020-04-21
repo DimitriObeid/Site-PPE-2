@@ -1,0 +1,135 @@
+section
+{
+	float: left;
+	width: 66%;
+	margin: 2%;
+	margin-top: 6.6%;
+}
+
+h2
+{
+	font-family: Assassin, sans-serif;
+	background: #bf161c;
+	border-radius: 15px;
+	border: 1px #4d0405 solid;
+	font-weight: lighter;
+	font-size: 30px;
+	color: #e6e6e6;
+	text-align: center;
+	margin-bottom: 3%;
+	padding: 1%;
+}
+
+section p
+{
+	background: #e8e8e8;
+	border-radius: 15px;
+	border: 1px #999999 solid;
+	font-size: 18px;
+	margin-bottom: 1%;
+	padding: 2%;
+}
+
+.titre
+{
+	font-family: Assassin, sans-serif;
+	color: #333333;
+	font-size: 25px;
+}
+
+aside
+{
+	background: #e8e8e8;
+	border-radius: 15px;
+	border: 1px #999999 solid;
+	font-size: 23px;
+	float: left;
+	width: 18%;
+	margin-top: 6.6%;
+	margin-left: 4%;
+	margin-right: 5.5%;
+}
+
+#liens
+{
+	width: 75%;
+	margin: auto;
+}
+
+.liens_sociaux
+{
+	background: none;
+	padding: 0;
+	border-radius: 0;
+	position: relative;
+	top: -6px;
+}
+
+.icons_liens
+{
+	border-radius: 150px;
+	width: 13.6%;
+	position: relative;
+	top: 8.5px;
+	margin: 2%;
+}
+
+#twitter
+{
+	background: url("design/social-icons/twitter-grey.png") no-repeat;
+	background-size: 100%;
+}
+
+#twitter:hover
+{
+	background: url("design/social-icons/twitter-red.png") no-repeat;
+	background-size: 100%;
+}
+
+#facebook
+{
+	background: url("design/social-icons/facebook-grey.png") no-repeat;
+	background-size: 100%;
+}
+
+#facebook:hover
+{
+	background: url("design/social-icons/facebook-red.png") no-repeat;
+	background-size: 100%;
+}
+
+#youtube
+{
+	background: url("design/social-icons/youtube-grey.png") no-repeat;
+	background-size: 100%;
+}
+
+#youtube:hover
+{
+	background: url("design/social-icons/youtube-red.png") no-repeat;
+	background-size: 100%;
+}
+
+#twitch
+{
+	background: url("design/social-icons/twitch-grey.png") no-repeat;
+	background-size: 100%;
+}
+
+#twitch:hover
+{
+	background: url("design/social-icons/twitch-red.png") no-repeat;
+	background-size: 100%;
+}
+
+#instagram
+{
+	background: url("design/social-icons/instagram-grey.png") no-repeat;
+	background-size: 100%;
+}
+
+#instagram:hover
+{
+	background: url("design/social-icons/instagram-red.png") no-repeat;
+	background-size: 100%;
+}

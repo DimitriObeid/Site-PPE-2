@@ -1,0 +1,139 @@
+section
+{
+   float: left;
+	width: 25%;
+	margin: 2%;
+	margin-top: 6.6%;
+	margin-left: 37.5%;
+	margin-right: 37.5%;
+}
+
+h2
+{
+   font-family: Assassin, sans-serif;
+	background: #bf161c;
+	border-radius: 15px;
+	border: 1px #4d0405 solid;
+	font-weight: lighter;
+	font-size: 30px;
+	color: #e6e6e6;
+	text-align: center;
+	margin-bottom: 8%;
+	padding: 1%;
+}
+
+form
+{
+	background: #e8e8e8;
+	border-radius: 15px;
+	border: 1px #999999 solid;
+	font-size: 20px;
+   padding-top: 4%;
+}
+
+fieldset
+{
+   display: flex;
+	flex-direction: column;
+	align-items: center;
+   width: 75%;
+   margin: auto;
+   margin-bottom: 5%;
+}
+
+legend
+{
+   font-size: 22px;
+   margin-left: 3%;
+}
+
+input
+{
+   background: #fafafa;
+   text-align: center;
+	width: 50%;
+   font-weight: bold;
+   border-radius: 5px;
+   border: 1px #bababa solid;
+   margin-bottom: 5%;
+   padding: 1%;
+}
+
+p input
+{
+   width: auto;
+}
+
+#r_femme
+{
+   position: relative;
+   right: 2px;
+}
+
+#r_autre
+{
+   position: relative;
+   right: 12px;
+   margin-bottom: 5%;
+}
+
+#adresse
+{
+   width: 75%;
+}
+
+#cp
+{
+   width: 25%;
+}
+
+#bio
+{
+   background: #fafafa;
+   font-weight: bold;
+   border-radius: 8px;
+   border: 1px #bababa solid;
+   margin-bottom: 5%;
+   padding: 3%;
+}
+
+#envoyer
+{
+   float: left;
+   margin-left: 36%;
+}
+
+#image
+{
+   background: #e8e8e8;
+   border: none;
+   width: 30%;
+}
+
+input:focus, #bio:focus
+{
+   border: 1px #b01218 solid;
+}
+
+input[type="radio"]
+{
+   display: none;
+}
+
+input[type="radio"] + label span
+{
+   display:inline-block;
+   width: 19px;
+   height: 19px;
+   margin: -2px 11px 0 0;
+   vertical-align: middle;
+   background: url("design/radio_sheet.png") -19px top no-repeat;
+   background-size: 185%;
+   cursor: pointer;
+}
+
+input[type="radio"]:checked + label span
+{
+   background: url("design/radio_sheet.png") left top no-repeat;
+   background-size: 185%;
+}

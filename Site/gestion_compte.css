@@ -1,0 +1,112 @@
+nav ul
+{
+   width: 45.5%;
+}
+
+#gestion_compte
+{
+   display: inline;
+}
+
+section
+{
+   float: left;
+	width: 50%;
+	margin: 2%;
+	margin-top: 6.6%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+h2
+{
+   font-family: Assassin, sans-serif;
+	background: #bf161c;
+	border-radius: 15px;
+	border: 1px #4d0405 solid;
+	font-weight: lighter;
+	font-size: 30px;
+	color: #e6e6e6;
+	text-align: center;
+	margin-bottom: 4.5%;
+	padding: 1%;
+}
+
+form
+{
+	background: #e8e8e8;
+	border-radius: 15px;
+	border: 1px #999999 solid;
+	font-size: 20px;
+   padding-top: 4%;
+}
+
+fieldset
+{
+   display: flex;
+	flex-direction: column;
+   width: 85%;
+   margin: auto;
+   margin-bottom: 5%;
+   padding-left: 2%;
+   padding-top: 1%;
+}
+
+legend
+{
+   font-size: 22px;
+   margin-left: 3%;
+}
+
+input
+{
+   background: #fafafa;
+	width: 25%;
+   font-weight: bold;
+   border-radius: 5px;
+   border: 1px #bababa solid;
+   margin-left: 2%;
+   margin-bottom: 3%;
+   padding: 0.6%;
+}
+
+#adresse
+{
+   width: 75%;
+}
+
+#tel
+{
+   width: 26%;
+}
+
+#bio
+{
+   background: #fafafa;
+   font-weight: bold;
+   border-radius: 8px;
+   border: 1px #bababa solid;
+   width: 90%;
+   margin-left: 2%;
+   margin-right: 2%;
+   margin-bottom: 3%;
+   padding: 1.5%;
+}
+
+#envoyer
+{
+   float: left;
+   margin-left: 45%;
+}
+
+#image
+{
+   background: #e8e8e8;
+   border: none;
+   width: 15%;
+}
+
+input:focus, #bio:focus
+{
+   border: 1px #b01218 solid;
+}
