@@ -1,10 +1,30 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8" />
 		<title>A propos</title>
 		<link rel="stylesheet" href="header.css" />
-		<link rel="stylesheet" href="a_propos.css">
+		<link rel="stylesheet" href="a_propos.css" />
+		<?php
+			if (isset($_SESSION["pseudo"]))
+			{
+				if ($_SESSION["pseudo"]=="admin")
+				{
+		?>
+					<link rel="stylesheet" href="ajout_administration.css" />
+		<?php
+				}
+				else
+				{
+		?>
+					<link rel="stylesheet" href="ajout_gestion_compte.css" />
+		<?php
+				}
+			}
+		?>
 		<link rel="stylesheet" href="assassin/stylesheet.css" />
 		<link rel="stylesheet" href="roboto_thin/stylesheet.css" />
 		<link rel="icon" sizes="144x144" href="design/icon.png" />
@@ -15,12 +35,25 @@
 			<h1>Assassin's Creed II</h1>
 			<nav>
 				<ul>
-					<li><a href="index.html" class="menu">Accueil</a></li>
-					<li id="gestion_compte"><a href="gestion_compte.html" class="menu">Gestion du compte</a></li>
-					<li id="administration"><a href="administration.html" class="menu">Administration</a></li>
-					<li id="a_propos"><a href="a_propos.html" class="menu" id="en_cour">A propos</a></li>
-					<li><a href="inscription.html" class="inscr_conn">Inscription</a></li>
-					<li><a href="connexion.html" class="inscr_conn">Connexion</a></li>
+					<li><a href="index.php" class="menu">Accueil</a></li>
+					<li id="gestion_compte"><a href="gestion_compte.php" class="menu">Gestion du compte</a></li>
+					<li id="administration"><a href="administration.php" class="menu">Administration</a></li>
+					<li id="a_propos"><a href="a_propos.php" class="menu" id="en_cour">A propos</a></li>
+					<?php
+						if (!isset($_SESSION["pseudo"]))
+						{
+					?>
+							<li><a href="inscription.php" class="inscr_conn">Inscription</a></li>
+							<li><a href="connexion.php" class="inscr_conn">Connexion</a></li>
+					<?php
+						}
+						else
+						{
+					?>
+							<li><a href="deconnexion.php" class="inscr_conn">Deconnexion</a></li>
+					<?php
+						}
+					?>
 				</ul>
 			</nav>
 		</header>
@@ -45,12 +78,12 @@
 			<span class="titre">Notre Equipe</span>
 			<br />
 			<br />
-			Nous somme trois développeurs et aussi trois fans de la série. Nous avons élaborer ce projet dans son intégralité à seulement trois personnes sachant que le site à été entièrement 				codé à la main. Nous sommes une équipe de volontaires et de passionnés, ayant un objectif commun : réunnir tous les fans de la communauté francophone à travers le web au même 				endroit dans un esprit d'entraide et de partage. 
+			Nous somme trois développeurs et aussi trois fans de la série. Nous avons élaborer ce projet dans son intégralité à seulement trois personnes sachant que le site à été entièrement 				codé à la main. Nous sommes une équipe de volontaires et de passionnés, ayant un objectif commun : réunnir tous les fans de la communauté francophone à travers le web au même 				endroit dans un esprit d'entraide et de partage.
 		</p>
 	</section>
 	<aside>
 		<p>Les Mentors :
-		<br /> 
+		<br />
 		<br />
 		- Mathieu PROT
 		<br />

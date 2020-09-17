@@ -110,6 +110,18 @@ p input
    width: 30%;
 }
 
+#requis
+{
+   color: #ba0000;
+   font-size: 15px;
+}
+
+#optionnel
+{
+   color: #1c9d02;
+   font-size: 15px;
+}
+
 input:focus, #bio:focus
 {
    border: 1px #b01218 solid;

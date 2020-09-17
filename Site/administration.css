@@ -31,11 +31,6 @@ h2
 	padding: 1%;
 }
 
-nav ul
-{
-   width: 57%;
-}
-
 span
 {
 	font-family: Assassin, sans-serif;
@@ -45,13 +40,13 @@ span
 
 p a
 {
+	color: #000000;
+	font-size: 18px;
 	margin-left: 9%;
 }
 
 p a:hover
 {
-    background: #f8f8f8;
-    border-left: 6px #ff0000 solid;
-    color: #000000;
-    font-size: 18px;
+	background: #f8f8f8;
+	border-left: 6px #ff0000 solid;
 }

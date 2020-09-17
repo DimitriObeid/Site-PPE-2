@@ -1,10 +1,30 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<title>Accueil</title>
 		<link rel="stylesheet" href="header.css" />
-		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="index.css" />
+		<?php
+			if (isset($_SESSION["pseudo"]))
+			{
+				if ($_SESSION["pseudo"]=="admin")
+				{
+		?>
+					<link rel="stylesheet" href="ajout_administration.css" />
+		<?php
+				}
+				else
+				{
+		?>
+					<link rel="stylesheet" href="ajout_gestion_compte.css" />
+		<?php
+				}
+			}
+		?>
 		<link rel="stylesheet" href="assassin/stylesheet.css" />
 		<link rel="stylesheet" href="roboto_thin/stylesheet.css" />
 		<link rel="icon" sizes="144x144" href="design/icon.png" />
@@ -16,12 +36,25 @@
 			<nav>
 				<ul>
 					<!-- N'oubliez pas de déplacer l'id="en_cour" à la page en cours. Ex : pour la page gestion_compte, enlever l'id de index, et le remettre à gestion_compte. -->
-					<li><a href="index.html" class="menu" id="en_cour">Accueil</a></li>
-					<li id="gestion_compte"><a href="gestion_compte.html" class="menu">Gestion du compte</a></li>
-					<li id="administration"><a href="administration.html" class="menu">Administration</a></li>
-					<li id="a_propos"><a href="a_propos.html" class="menu">A propos</a></li>
-					<li><a href="inscription.html" class="inscr_conn">Inscription</a></li>
-					<li><a href="connexion.html" class="inscr_conn">Connexion</a></li>
+					<li><a href="index.php" class="menu" id="en_cour">Accueil</a></li>
+					<li id="gestion_compte"><a href="gestion_compte.php" class="menu">Gestion du compte</a></li>
+					<li id="administration"><a href="administration.php" class="menu">Administration</a></li>
+					<li id="a_propos"><a href="a_propos.php" class="menu">A propos</a></li>
+					<?php
+						if (!isset($_SESSION["pseudo"]))
+						{
+					?>
+							<li><a href="inscription.php" class="inscr_conn">Inscription</a></li>
+							<li><a href="connexion.php" class="inscr_conn">Connexion</a></li>
+					<?php
+						}
+						else
+						{
+					?>
+							<li><a href="deconnexion.php" class="inscr_conn">Deconnexion</a></li>
+					<?php
+						}
+					?>
 				</ul>
 			</nav>
 		</header>
@@ -256,16 +289,16 @@
 		<aside>
 			<p>
 				<span class="titre">Menus :</span><br />
-				<a href="index.html#introduction" class="liens_utiles">Introduction</a><br />
+				<a href="index.php#introduction" class="liens_utiles">Introduction</a><br />
 				L'histoire :<br />
-				<a href="index.html#h_ac_2" class="liens_utiles">Assassin's Creed 2</a><br />
-				<a href="index.html#h_ac_b" class="liens_utiles">Assassin's Creed Brotherhood</a><br />
-				<a href="index.html#h_ac_r" class="liens_utiles">Assassin's Creed Revelation</a><br />
-				<a href="index.html#h_ac_e" class="liens_utiles">Assassin's Creed Embers</a><br />
+				<a href="index.php#h_ac_2" class="liens_utiles">Assassin's Creed 2</a><br />
+				<a href="index.php#h_ac_b" class="liens_utiles">Assassin's Creed Brotherhood</a><br />
+				<a href="index.php#h_ac_r" class="liens_utiles">Assassin's Creed Revelation</a><br />
+				<a href="index.php#h_ac_e" class="liens_utiles">Assassin's Creed Embers</a><br />
 				Le gameplay :<br />
-				<a href="index.html#g_ac_2" class="liens_utiles">Assassin's Creed 2</a><br />
-				<a href="index.html#g_ac_b" class="liens_utiles">Assassin's Creed Brotherhood</a><br />
-				<a href="index.html#g_ac_r" class="liens_utiles">Assassin's Creed Revelation</a>
+				<a href="index.php#g_ac_2" class="liens_utiles">Assassin's Creed 2</a><br />
+				<a href="index.php#g_ac_b" class="liens_utiles">Assassin's Creed Brotherhood</a><br />
+				<a href="index.php#g_ac_r" class="liens_utiles">Assassin's Creed Revelation</a>
 			</p>
 			<p>
 				<span class="titre">Liens utiles :</span><br />

@@ -38,7 +38,7 @@ fieldset
 	align-items: center;
 	width: 75%;
 	margin: auto;
-	margin-bottom: 5%;
+	margin-bottom: 1%;
    padding-top: 2%;
 }
 
@@ -52,6 +52,13 @@ input
    border: 1px #bababa solid;
    margin-bottom: 5%;
    padding: 1%;
+}
+
+#incorrect
+{
+   font-size: 17px;
+   color: #cd0000;
+   margin-left: 20%;
 }
 
 #connexion
